@@ -1,0 +1,1114 @@
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+/* Animacion */
+
+/* INDEX*/ 
+/* .bodyIndex  {  
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 2fr 0.5fr;
+    gap: 0px 0px;
+    margin: solid black 2pt;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "footer footer footer"
+} */
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    justify-content: center;
+    margin: 0 0 1rem;
+
+}
+
+.logoArriba img{
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+    width: 20vw;
+    height: auto;
+
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main article{
+    display: flex;
+    flex-flow: row;
+    padding: 1rem;
+    margin: 1rem;
+    border: solid #0d1417ff 0.1rem;
+}
+main article p{
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 90vw;
+    padding: 0.5rem;
+    margin: 0rem;
+    font-size: 1,5rem;
+    color: #2f3b46ff;
+    font-family: lora;
+    border: solid #0d1417ff 0.1rem;
+    justify-content: space-around;
+    align-items: stretch;
+}
+main .carousel img{
+    display: flex;
+    justify-self: center;
+    align-self: fcenter;
+    max-width: 90vw;
+}
+
+ footer{
+    max-width: 100vw;
+    max-height: auto;
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+} */
+
+.logoAbajo--fit{
+    max-width: 33%;
+    align-self: flex-end;
+    justify-self: center;
+}
+.redes ul{
+    max-width: 33%;
+}
+
+.redes__icono{
+    max-width: 32px;
+    max-height: 32px;
+    margin: 0.2rem;
+}
+.contacto{
+    max-width: 33%;
+    max-height: auto;
+    background-color: #82adb2ff;
+    border: solid cornflowerblue 2px;
+    font-family: lora;
+    color: black;
+}
+.contacto a{
+    text-decoration: none;
+}
+.redes{
+    grid-template-columns: redes;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline; 
+    justify-content:flex-start;
+    
+}
+
+.redes li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none   ;
+}
+.logoAbajo--fit{
+    display: grid;
+    grid-area: logoAbajo;
+    align-self: center;
+    justify-self: center;
+    max-width: 10rem;
+    max-height: 100%;
+    overflow: hidden;
+}
+.logoAbajo {
+    display: flex;
+    align-items: stretch;
+    max-width: 50rem;
+    
+}
+
+
+
+.carousel img{
+    height: 100vh;
+    width: 99vw;
+    border: solid 0.1rem rgb(37, 105, 112);
+    padding: 0;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    max-height: 3rem;
+}
+.menu li{
+    font-size: 2rem;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    border: solid 2px #897979ff;
+    background-color: #efe7dcb0;
+    border-radius: 10px;
+    list-style: none;
+    max-height: 3rem;
+}
+.menu li a{
+    color: #0d1417ff;
+    text-decoration: none;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .bodyIndex{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3 1fr);
+        max-width: 100vw;
+        grid-template-areas: 
+        header
+        main
+        footer;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: stretch;
+        }
+    .menu{
+        grid-area: menu;
+        display: flex;
+        flex-direction: row;
+        }
+    .menu li{
+        display: flex;
+        height: auto;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: stretch;
+        
+        margin: auto;
+    }
+    main article {
+        display: flex;
+        flex-direction: column;
+        margin: 0.1rem;
+        font-size: 1rem;
+        color: #2f3b46ff;
+        font-family: lora;
+        border: solid #0d1417ff 0.1rem;
+        justify-content: space-around;
+        align-items: stretch;
+        }
+    .carousel img{
+        height: auto;;
+    } */
+    .carousel{
+        height: auto;
+    }
+        
+} 
+
+@media screen and (max-width:480px) {
+    
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: stretch;
+        }
+
+        .logoArriba {
+            display: flex;
+            align-self: center;
+            justify-self: flex-start;
+            width: 100vw;
+            height: 60%;
+        }
+        .logoArriba a{
+            height: fit-content;
+        }
+    .menu{
+        display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    max-height: fit-content;
+    margin: 1rem 0rem 0rem 0rem;}
+    .menu li{
+        display: flex;
+        height: auto;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: stretch;
+        
+        margin: auto;
+    }
+    main .serviciosIndex {
+        max-width: 80vw;
+        display: flex;
+        flex-direction: column;
+        font-size: 1rem;
+        color: #2f3b46ff;
+        font-family: lora;
+        justify-content: center;
+        align-content: center;
+        }
+    .carousel img{
+        height: auto;;
+    } */
+    .carousel{
+        height: auto;
+    }
+    }
+
+
+/* PRODUCTOS */
+body {
+        background-image: linear-gradient(to right, #82b1bdff , #114e5eff);
+    font-family: lora;
+    }
+
+header{ 
+    background-color: #efe7dc;
+    max-width: 100vw;
+    max-height: 25vh;
+    margin: 0;
+    padding: 0;
+}
+
+.headerProyectos{
+    background-color: #efe7dc;
+    max-width: 100vw;
+    max-height: 30vh;
+    margin: 0 0 2rem  0;
+    padding: 0;
+    font-family: lora;
+    font-size: 1.5rem;
+    
+}
+
+.headerProductos{
+    background-color: #efe7dc;
+    max-width: 100vw;
+    max-height: 30vh;
+    margin: 0 0 2rem  0;
+    padding: 0;
+    font-family: lora;
+    font-size: 1.5rem;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+        background-color: #82adb2ff;
+        max-height: 10vh;
+}
+/* .mainProductos {
+    width: 90vw;
+    height: auto;
+    margin: 5rem 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    }
+
+    .productos{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem;
+    } */
+
+.productos h2{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    size: 1,5rem;
+    font-family: lora;
+    color: #0d1417ff;
+    margin-left:2rem ;
+    
+}
+*/
+
+
+/*    .productos li{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    } */
+    
+    
+    .productos__sillas img{
+            margin:10px auto;
+            border-radius:5px;
+            border: 1px solid #999;
+            padding:13px;
+            width: 250px;
+            height:320px;
+            overflow: hidden;
+        }
+    .productos__sillones img{
+            margin:10px auto;
+            border-radius:5px;
+            border: 1px solid #999;
+            padding:13px;
+            width:330px;
+            height:300px;
+            object-fit:initial;
+        }
+    
+    .productos__mesas img{
+        margin:10px auto;
+        border-radius:5px;
+        border: 1px solid #999;
+        padding:13px;
+        width:330px;
+        height:300px;
+    }
+    
+    
+    
+    
+    
+    .descripcion{
+        display: flex;
+        border: solid 2px #82adb2ff;
+        max-width: 300px;
+        max-height: 250px;
+        margin: 10px;
+        padding: 2px;
+        overflow: none;
+    }
+    
+    .descripcion p{
+        font-family: lora;
+        color: #2f3b46ff;
+        font-size: 1rem;
+        background-color: rgba(242, 230, 203, 0.562) ;
+    }
+    
+        .productos__mesasRatonas img{
+            margin:10px auto;
+            border-radius:5px;
+            border: 1px solid #999;
+            padding:13px;
+            width:330px;
+            height:300px;
+        }
+
+.nav_mio{
+    max-width: 100vw;
+    max-height: 25vh;
+}
+/* 
+        @media screen and (max-width:480px) {
+    
+            main .mainProductos {
+                    width: 90vw;
+                    height: auto;
+                    margin: 5rem 2rem;
+                    display: grid;
+                    grid-template-rows: 1fr;
+                    grid-template-columns: 1fr;
+                    align-items: center;
+                    justify-items: center;}
+            
+                
+            } */
+        
+.productos ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* QUIENES SOMOS  */
+.mainNosotros{
+    display: flex;
+    }
+.quienesSomos h3{
+    font-family: lora;
+    display: inline-block;
+    margin: 5px 10px;
+    color: #0d1417ff;
+    text-decoration: underline double 2px;
+}
+
+.quienesSomos{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: center;
+}
+.perfilimg img{
+    width: 300px;
+    max-height: 3000px;
+    margin: 5px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.paleta{color: --alabaster #f1ede2ff;
+            --alabaster-2: #e0e2d4ff;
+            --champagne: #f2e6cbff;
+            --pewter-blue: #82b1bdff;
+            --pewter-blue-2: #82adb2ff;
+            --midnight-green-eagle-green: #114e5eff;
+            --mellow-apricot: #f0ba79ff;
+            --charcoal: #2f3b46ff;
+            --rich-black-fogra-29: #0d1417ff;
+}
+
+
+
+/*
+paleta de colores https://coolors.co/palette/f1ede2-f2e6cb-82b1bd-82adb2-f0ba79-eda556-897979-766767-2f3b46-0d1417
+CSS HEX 
+Fondo general --alabaster: #f1ede2ff; 
+Fondo de recuadros --champagne: #f2e6cbff;
+azul cielo --pewter-blue: #82b1bdff;
+azul mas palido --pewter-blue-2: #82adb2ff;
+Destacar naranja  claro --mellow-apricot: #f0ba79ff;
+Destacar naranja oscuro --rajah: #eda556ff;
+Fondos apagados marron claro --rocket-metallic: #897979ff;
+Fondo apagado marron oscuro --deep-taupe: #766767ff;
+Texto --charcoal: #2f3b46ff;
+Titulos --rich-black-fogra-29: #0d1417ff;
+
+
+Fuentes
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+*/
+
+
+
+/*
+body{
+    background-image: url(../Imagenes/Dantecorte.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+
+
+/* GRIDS */
+/* .bodyIndex {
+    display: grid; 
+    grid-template-columns: repeat(3 1fr); 
+    grid-template-rows: repeat(4 1fr) ; 
+    gap: 0px 0px; 
+    grid-template-areas:
+    logoArriba menu menu
+    carousel carousel carousel
+    asesoria presupuestacion decoracion
+    redes logoAbajo ContactoAbajo
+    ; 
+}
+
+.logoArriba{
+    grid-area: logoArriba;
+}
+.menu{
+    grid-area: menu;
+}
+
+.carousel{
+    grid-area: carousel;
+}
+
+.servicios_asesoria{
+    grid-area: asesoria;
+}
+
+.servicios_presupuestacion{
+    grid-area: presupuestacion;
+}
+
+.servicios_decoracion{
+    grid-area: decoracion;
+}
+.redes{
+    grid-area: redes;
+}
+
+.logoAbajo{
+    grid-area: logoAbajo;
+}
+
+.contactoAbajo{
+    grid-area: contactoAbajo;
+}
+ */
+
+/* 
+body{
+    background-color: #f1ede2ff;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+h3{
+    color: #0d1417ff ;
+    font-family: 'lora';
+    font-size: 2rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+     */
+
+/*
+.serviciosIndex{
+    display: inline;
+    padding: 0.1rem;
+    margin: 00.1rem;
+    position: relative;
+}
+.logoArriba{
+    max-width: 180px;
+    max-height: 180px;
+}
+
+*/
+
+/* #navegacion{
+    position:sticky;
+    top: 0%;
+    z-index: 100000000;
+    background-color: #f1ede2ff;
+} */
+
+/* .menu li{
+    display: inline-block;
+    position: relative; 
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    margin: 10px 10px;
+    border: solid 2px #897979ff;
+    background-color: #f0ba79ff;
+    border-radius: 10px;
+    
+}
+.menu li a{
+    color: #0d1417ff;
+    text-decoration: none;
+}
+
+.menu__submenu{
+    display: none;
+    position: absolute;
+}
+
+.menu__submenu li{
+    display: block;
+    background-color:#82adb2ff;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+
+
+main{
+    background-image: url(../Imagenes/Dantecorte.jpg);
+    max-width: 100%;
+    max-height: fit-content;
+}
+
+.carousel{
+    height: 50rem;
+    width: 70rem;
+    border: solid 2mm rgb(37, 105, 112);
+    position: relative;
+    left: 20%;
+    background-color: #82adb2ff;
+    text-align: center;
+}
+
+
+#footer {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 10px 10px;
+
+}
+.redes__icono{
+    display:inline-block;
+    max-width: 32px;
+    max-height: 32px;
+}
+
+/* .redes li{
+    display: inline-block;
+    position: relative;
+    padding: 0 4px;
+    margin: auto;
+} *
+
+.whatsapp {
+display: block;
+position: fixed;
+bottom: 10%;
+right: 10%;
+}
+
+.whatsapp__icono{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.whatsapp__icono:hover{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.logoAbajo{
+    display:inline-block;
+    max-width: 180px;
+    max-height: 180px;
+    position: relative;
+    bottom: auto;
+    left: auto;
+}
+
+.logoAbajo--fit{
+object-fit: contain;
+max-width: 100%;
+max-height:100%;    
+}
+
+*/
+
+/* Productos 
+
+.productos li{
+    display: inline-block;
+}
+
+
+.productos__sillas img{
+        margin:10px auto;
+        border-radius:5px;
+        border: 1px solid #999;
+        padding:13px;
+        width: 250px;
+        height:320px;
+        overflow: hidden;
+    }
+    
+.productos__sillones img{
+        margin:10px auto;
+        border-radius:5px;
+        border: 1px solid #999;
+        padding:13px;
+        width:330px;
+        height:300px;
+        object-fit:initial;
+    }
+
+.productos__mesas img{
+    margin:10px auto;
+    border-radius:5px;
+    border: 1px solid #999;
+    padding:13px;
+    width:330px;
+    height:300px;
+}
+
+.productos__mesas--hover{
+    position:relative
+}
+
+
+
+
+.descripcion{
+    display: none;
+    border: solid 2px #82adb2ff;
+    max-width: 300px;
+    max-height: 250px;
+    margin: 10px;
+    padding: 2px;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: 10px;
+    overflow: none;
+}
+
+.descripcion p{
+    font-family: lora;
+    color: #2f3b46ff;
+    font-size: 1rem;
+    background-color: rgba(242, 230, 203, 0.562) ;
+}
+
+.productos__mesas--hover:hover .descripcion{
+    display:block;}
+
+    .productos__mesasRatonas img{
+        margin:10px auto;
+        border-radius:5px;
+        border: 1px solid #999;
+        padding:13px;
+        width:330px;
+        height:300px;
+    }
+*/
+/*----------PROYECTOS----------------------------------
+
+.proyecto img{
+    display: inline-block;
+    max-width: 500px;
+    max-height: auto;
+}
+.proyecto div{
+    display: inline-block;
+    border: solid 2f3b46ff 3px;
+    max-width: 200px;
+    max-height: auto;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    background-color:#2f3b46ff;
+}
+
+.proyecto p{
+    text-align: justify;
+    font-family: lora;
+    font-size: medium;
+    font-style: italic;
+    color: #f1ede2ff;
+}
+
+.iframeDante iframe{
+display: block;
+margin: 9px;
+padding: 5px;
+}
+*/
+
+
+/* perfil div{
+    display: inline-block;
+    position: relative;
+} 
+
+.perfil p{
+    max-width: 300px;
+    max-height: auto;
+    font-family: lora;
+    font-size: 1rem;
+    color: #0d1417ff;
+    background-color: #82b1bdff;
+}
+
+
+
+
+.iframeMapa {
+display: block; 
+    max-width: 300px;
+    max-height: auto;
+    position: relative;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+.publicidad div{
+display: inline-block;
+    position: fixed; 
+    right: 0px;
+    top: 235px;
+    max-width: 200px;
+    max-height: 400px;
+    background-color: rgba(130, 177, 189, 0.521);
+    overflow: hidden;
+    font-family: lora;
+    font-size: small;
+} 
+
+CONTACTO----------------------------------------------
+.formulario_contacto fieldset{
+    display: block;
+}
+
+.datosPersonales{
+    display: block;
+    position: relative;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    margin: 15px;
+    background-color: rgba(130, 177, 189, 0.322);
+    font-family: lora;
+    font-size: 1.2rem;
+
+}
+
+.datosPersonales label{
+    position: relative;
+    top: 0px;
+    left: 5px;
+    display: block;
+}
+
+.servicios{
+    display: block;
+    position: relative;
+    width: 500px;
+    height: auto;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgba(130, 177, 189, 0.322);
+    font-family: lora;
+    font-size: 1.2rem;
+}
+
+.servicios label{
+    position: relative;
+    top: 0px;
+    left: 5px;
+    display: block;
+}
+
+.servicios textarea{
+    width: 400px;
+    font-family: lora;
+    font-size: 1rem;
+}
+
+.checkbox{
+    display: block;
+    position: relative;
+    margin-left: 10px;
+    left: 25 px;
+}
+
+.botones input{
+    display: inline-block;
+    margin: 3px;
+    padding: 5px;
+    border: #766767ff solid 2px;
+    background-color: #82b1bdff;
+    border-radius: 5px;
+    font-family: lora;
+    font-size: 1rem;
+}
+
+
+
+.boton_java{
+    display: none
+}
+
+.faq{
+    display: inline-block;
+    position: absolute;
+    max-width: 400px;
+    max-height: auto;
+    top: 235px;
+    right: 0px;
+    margin-right: 100px;
+    padding: 5px;
+}
+
+.faq p{
+    font-family: lora;
+    font-size: 0.9rem;
+    overflow: hidden;
+}
+.faq span{
+    font-family: lora;
+    font-size: 1.2rem;
+    font-weight: 600;
+} 
+
+
+
+class se llama con .
+.parrafo_rojo{
+    color: red;
+}
+
+.bordes_redondeados{
+    border-image: round;
+}
+
+.imagen_chica{
+    border-color: black;
+    border-width: 1cm;
+}
+
+id se llama con # 
+#footer{
+    color: rgb(155, 18, 18);
+}
+
+.amarillo{
+    color: yellow;
+}
+.negro{
+    color: black;
+}
+
+ol li{color: blueviolet;}
+ul li{color: darkslategray;}
+h3{color: fuchsia;} 
+
+dsd */
+
+
+
